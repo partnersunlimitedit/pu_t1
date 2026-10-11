@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Sign In — Partners Unlimited</title>
+<meta name="theme-color" content="#0a1628">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="members.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233b5bff'/><text x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Arial' font-weight='bold'>PU</text></svg>">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="Partners Unlimited home"><img src="../assets/img/logo.png" alt="Partners Unlimited logo" width="220" height="44"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a><a href="../membership.html">Membership</a><a href="member-directory.html">Directory</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="member-directory.html">Member Directory</a>
+      <button class="burger" aria-label="Menu"><svg class="i" aria-hidden="true"><use href="../assets/icons.svg#menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-logo"><img src="../assets/img/logo.png" alt="" width="200" height="40" aria-hidden="true"></div>
+      <h1>Member Sign In</h1>
+      <p class="auth-sub">Access the member portal and admin panel.</p>
+
+      <div class="auth-err" id="authErr" role="alert"></div>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="username" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Any password works" required>
+        </div>
+        <div class="field">
+          <label for="role">Sign in as</label>
+          <select id="role" name="role" style="width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:.97rem;background:var(--bg-soft);color:var(--text)">
+            <option value="member">Member</option>
+            <option value="admin">Administrator</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Sign In →</button>
+      </form>
+
+      <div class="auth-hint">
+        <b>Demo mode —</b> any email and any password will sign you in. Suggested:
+        <br>Member: <code>member@partnersunlimited.net</code> · Admin: <code>admin@partnersunlimited.net</code>
+      </div>
+
+      <div class="auth-footer">
+        Not a member? <a href="../membership.html">Explore membership</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="data.js"></script>
+<script src="members.js"></script>
+</body>
+</html>
