@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Partners Unlimited</title>
+<meta name="theme-color" content="#0a1628">
+<meta name="description" content="Get in touch with Partners Unlimited (HK) Pte Ltd. Apply for membership or send an enquiry.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233b5bff'/><text x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Arial' font-weight='bold'>PU</text></svg>">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html" aria-label="Partners Unlimited home"><img src="assets/img/logo.png" alt="Partners Unlimited logo" width="220" height="44"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="membership.html">Membership</a><a href="evaluation.html">Members Evaluation</a><a href="operate.html">How We Operate</a><a href="meetings.html">Meetings</a><a href="contact.html" class="active">Contact Us</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="https://members.partnersunlimited.net/" target="_blank" rel="noopener">Member Area</a>
+      <a class="btn btn-primary" href="contact.html">Join the Network →</a>
+      <button class="burger" aria-label="Menu"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-banner">
+  <div class="wrap reveal">
+    <span class="eyebrow">Contact Us</span>
+    <h1 style="margin:18px 0 6px">Let's <span class="grad-text">talk</span></h1>
+    <p>Applying for membership, have a question, or want to explore partnership? Send us a message and our team will get back to you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="info-card">
+        <h3>Partners Unlimited (HK) Pte Ltd</h3>
+        <p style="color:#9fb0d0;margin-top:8px">We're based in the heart of Hong Kong.</p>
+        <div class="item" style="margin-top:24px">
+          <div class="ic"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#pin"/></svg></div>
+          <div><div class="lbl">Address</div><div class="val">Room 1702, 17/F Easey Commercial Building<br>253-261 Hennessy Road, Wan Chai<br>Hong Kong</div></div>
+        </div>
+        <div class="item">
+          <div class="ic"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg></div>
+          <div><div class="lbl">Telephone</div><div class="val">1 (310) 918-3820</div></div>
+        </div>
+        <a class="btn btn-ghost" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.25);margin-top:22px" href="https://maps.google.com/maps?q=253-261+Hennessy+Road+Wan+Chai+Hong+Kong&hl=en-gb&t=m&z=15" target="_blank" rel="noopener">View Google Map →</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <form class="form-card" onsubmit="handleSubmit(event)">
+        <h3>Send an Enquiry</h3>
+        <p style="margin:6px 0 24px;font-size:.95rem">Fields marked * are required.</p>
+        <div class="field"><label for="name">Your Name *</label><input id="name" type="text" name="name" autocomplete="name" required placeholder="Jane Doe"></div>
+        <div class="field"><label for="email">E-Mail Address *</label><input id="email" type="email" name="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder="jane@company.com"></div>
+        <div class="field"><label for="enquiry">Enquiry *</label><textarea id="enquiry" name="enquiry" autocomplete="off" required placeholder="Tell us about your company and how we can help..."></textarea></div>
+        <button class="btn btn-primary" type="submit">Submit Enquiry →</button>
+        <p id="formMsg" style="margin-top:16px;font-size:.9rem;color:var(--accent);display:none">Thanks! Your enquiry has been noted. (Static demo — wire this form to your backend or a service like Formspree.)</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img class="foot-logo" src="assets/img/logo.png" alt="" width="200" height="40" aria-hidden="true"><p>A network of like-minded mid-size logistics providers across the world.</p><div class="socials" style="margin-top:18px"><a href="#" aria-label="Facebook"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#facebook"/></svg></a><a href="#" aria-label="Social"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#linkedin"/></svg></a><a href="#" aria-label="X"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#twitter"/></svg></a><a href="#" aria-label="Feed"><svg class="i" aria-hidden="true"><use href="assets/icons.svg#rss"/></svg></a></div></div>
+      <div><h5>Information</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="membership.html">Membership</a></li><li><a href="evaluation.html">Members Evaluation</a></li><li><a href="operate.html">How We Operate</a></li><li><a href="meetings.html">Meetings</a></li></ul></div>
+      <div><h5>Connect</h5><ul><li><a href="contact.html">Contact Us</a></li><li><a href="https://members.partnersunlimited.net/" target="_blank" rel="noopener">Member Area</a></li></ul></div>
+      <div><h5>Our Address</h5><p style="font-size:.9rem">Partners Unlimited (HK) Pte Ltd<br>Room 1702, 17/F Easey Commercial Building<br>253-261 Hennessy Road, Wan Chai<br>Hong Kong</p></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Partners Unlimited (HK) Pte Ltd. All rights reserved.</span><span>A Network of Logistics Excellence</span></div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+<script>
+function handleSubmit(e){e.preventDefault();document.getElementById('formMsg').style.display='block';e.target.reset();}
+</script>
+</body>
+</html>
