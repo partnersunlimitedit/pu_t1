@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel — Partners Unlimited</title>
+<meta name="theme-color" content="#0a1628">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="members.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233b5bff'/><text x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Arial' font-weight='bold'>PU</text></svg>">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="Partners Unlimited home"><img src="../assets/img/logo.png" alt="Partners Unlimited logo" width="220" height="44"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a><a href="../membership.html">Membership</a><a href="member-directory.html">Directory</a><a href="member-portal.html">Portal</a><a href="admin-panel.html" class="active">Admin</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="burger" aria-label="Menu"><svg class="i" aria-hidden="true"><use href="../assets/icons.svg#menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="member-topbar" id="topbar"></div>
+
+<main id="main">
+  <section style="padding:46px 0 10px">
+    <div class="wrap">
+      <div class="portal-welcome">
+        <span class="eyebrow">Admin Panel</span>
+        <h1 style="margin:14px 0 0">Network <span class="grad-text">overview</span></h1>
+        <p>Manage and review every member of Partners Unlimited. All entries below are fake test data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <div class="admin-stats">
+        <div class="metric" id="statTotal"></div>
+        <div class="metric" id="statScore"></div>
+        <div class="metric" id="statShared"></div>
+        <div class="metric" id="statDebt"></div>
+      </div>
+
+      <div class="profile-grid" style="margin-bottom:30px">
+        <div class="pblock">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span> Members by region</h3>
+          <div class="region-dist" id="regionDist"></div>
+        </div>
+        <div class="pblock">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9m6 12V5m6 16v-7"/></svg></span> Members by tier</h3>
+          <div class="region-dist" id="tierDist"></div>
+        </div>
+      </div>
+
+      <div class="admin-table-wrap">
+        <div class="admin-toolbar">
+          <div class="dir-search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+            <input type="search" id="adminSearch" placeholder="Search company, contact, country…" aria-label="Search members">
+          </div>
+          <select id="adminRegion" aria-label="Filter by region"></select>
+        </div>
+        <div class="admin-table-scroll">
+          <table class="admin-tbl">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Location</th>
+                <th>Region</th>
+                <th>Tier</th>
+                <th>Eval</th>
+                <th>Shared</th>
+                <th>Debt prot.</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="adminBody"></tbody>
+          </table>
+        </div>
+        <div class="admin-footer">
+          <span id="adminCount"></span>
+          <span>Test data — for layout/demo purposes only</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="detail-pop" id="detailPop" role="dialog" aria-modal="true"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom" style="border-top:none;margin-top:0;padding-top:0">
+      <span>© 2026 Partners Unlimited (HK) Pte Ltd. All rights reserved.</span>
+      <span>Admin Panel — Test Data</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="members.js"></script>
+</body>
+</html>

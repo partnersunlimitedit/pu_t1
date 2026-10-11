@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Portal — Partners Unlimited</title>
+<meta name="theme-color" content="#0a1628">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="members.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233b5bff'/><text x='50' y='68' font-size='52' fill='white' text-anchor='middle' font-family='Arial' font-weight='bold'>PU</text></svg>">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="../index.html" aria-label="Partners Unlimited home"><img src="../assets/img/logo.png" alt="Partners Unlimited logo" width="220" height="44"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a><a href="../membership.html">Membership</a><a href="member-directory.html">Directory</a><a href="member-portal.html" class="active">Portal</a><a href="admin-panel.html">Admin</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="burger" aria-label="Menu"><svg class="i" aria-hidden="true"><use href="../assets/icons.svg#menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="member-topbar" id="topbar"></div>
+
+<main id="main">
+  <section style="padding:46px 0 10px">
+    <div class="wrap">
+      <div class="portal-welcome">
+        <span class="eyebrow">Member Portal</span>
+        <h1 style="margin:14px 0 0">Welcome back, <span class="grad-text" id="welcomeName">Member</span></h1>
+        <p id="welcomeCompany">—</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <div class="metric-grid">
+        <div class="metric" id="metricScore"></div>
+        <div class="metric" id="metricShared"></div>
+        <div class="metric" id="metricTier"></div>
+        <div class="metric" id="metricDebt"></div>
+        <div class="metric" id="metricVsAvg"></div>
+        <div class="metric" id="metricJoined"></div>
+      </div>
+
+      <div class="profile-grid">
+        <div class="pblock">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg></span> Contact &amp; Company</h3>
+          <div class="kv-list" id="kvCore"></div>
+          <h3 style="margin-top:30px"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h12"/></svg></span> Business Profile</h3>
+          <div class="kv-list" id="kvBiz"></div>
+        </div>
+        <div class="pblock">
+          <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span> Membership Status</h3>
+          <div class="kv-list" id="kvStatus"></div>
+          <p class="muted" style="font-size:.84rem;margin-top:18px">Evaluation scores and shared-business percentages are updated annually after the AGM. This is fake test data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom" style="border-top:none;margin-top:0;padding-top:0">
+      <span>© 2026 Partners Unlimited (HK) Pte Ltd. All rights reserved.</span>
+      <span>Member Portal — Test Data</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="members.js"></script>
+</body>
+</html>
